@@ -1,0 +1,834 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "8124zqOkXFe9"
+      },
+      "outputs": [],
+      "source": [
+        "myList = [1,2,3,4,5]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "anotherList = [1,4,5,[10,11,12]]"
+      ],
+      "metadata": {
+        "id": "nknmi_KYXMFB"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "anotherList[3][1]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7702okpEXT8G",
+        "outputId": "d1898db4-fe0b-4a39-f7c9-cfe30381e25c"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "11"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mySet = {1,2,3,2,4,3,1,5}"
+      ],
+      "metadata": {
+        "id": "5PuGgLiaXoRf"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mySet"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IwCxIpi8Xt6F",
+        "outputId": "b264ad55-922f-48e7-f86f-59e656eb645c"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 3, 4, 5}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "myTuple = (1,2,3)"
+      ],
+      "metadata": {
+        "id": "7jNmtb3RXykG"
+      },
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "myTuple[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e3CmquNkX2_L",
+        "outputId": "e5e7887e-e0e9-472f-b77b-d319d633e59f"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "myTuple[0] = 8"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 179
+        },
+        "id": "62r0RxIzYBPz",
+        "outputId": "e868c2ee-71a8-46f0-8f39-72e880e8e9fd"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-9-72e35f3b6c9f>\u001b[0m in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mmyTuple\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;36m8\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'tuple' object does not support item assignment"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "myList[0] = 99"
+      ],
+      "metadata": {
+        "id": "mFyhBWVmYHsp"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "myList"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cpcZYxEuYKTR",
+        "outputId": "b1e2ab80-f00f-42e2-9865-e5076871b4f8"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[99, 2, 3, 4, 5]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d = {'key1':'value1','key2':'value2'}"
+      ],
+      "metadata": {
+        "id": "ZQmsG2ZEYPOc"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d['key1']"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "zjMTw9x8YYHC",
+        "outputId": "3e55e122-85c5-4210-c9d4-2af76a0b8ccb"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'value1'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 179
+        },
+        "id": "9Ud3WvRSYc5j",
+        "outputId": "5e3132fc-ad7b-43bb-c25c-eed0b3c5f5b2"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-14-123a9cc6df61>\u001b[0m in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0md\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mKeyError\u001b[0m: 0"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d['key3']"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 179
+        },
+        "id": "9bgi9e3MYe8F",
+        "outputId": "2356a991-f2ff-4150-99ef-7f5c2197d1c3"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-15-9b4e56484e72>\u001b[0m in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0md\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m'key3'\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mKeyError\u001b[0m: 'key3'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "1 > 2"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SHpo6OTgYncE",
+        "outputId": "8b0d25e1-c1d7-421a-8823-a8671092ac37"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "2 > 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MVeDskR4Yssi",
+        "outputId": "a1750d0a-f949-43a6-e0c9-1373d54c9dc6"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = True"
+      ],
+      "metadata": {
+        "id": "J9UCT-JDYwdj"
+      },
+      "execution_count": 19,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y = 5"
+      ],
+      "metadata": {
+        "id": "kPLP2eh8YymL"
+      },
+      "execution_count": 20,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y == 5"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rwHaNU0DY13b",
+        "outputId": "35954534-6e9a-4036-9c50-d8f943997143"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y != 5"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FIx5rtJOY8Sx",
+        "outputId": "085cfd7f-a9c0-42e1-bfdd-441d8701b046"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y >= 7"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9ozbxpvaY-l0",
+        "outputId": "94384bd0-28e3-43d6-c043-1957905e4cb4"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 23
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y <= 7"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8HUxAr0bZBNZ",
+        "outputId": "b665b520-9e00-4ec7-da84-476816761f9c"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "(1< 2) and (5<7)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "76y2B9yHZDNM",
+        "outputId": "d9dd0973-7e8f-4eb7-bbdf-5ec717a7c225"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "(1< 2) or (5>7)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O17J2bO_ZLWn",
+        "outputId": "450861db-9617-48d7-c5a1-11626b45838f"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 27
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "z = 10"
+      ],
+      "metadata": {
+        "id": "BbXaWyD5ZPPk"
+      },
+      "execution_count": 30,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if z > 5:\n",
+        "  print('z is greater than five')\n",
+        "  print('another line')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bCTqc6OOZTM3",
+        "outputId": "0e4b1980-f4ee-4f53-c063-0c10512582f9"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "z is greater than five\n",
+            "another line\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "z = 3"
+      ],
+      "metadata": {
+        "id": "zRQ0elpUZr-v"
+      },
+      "execution_count": 34,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if z > 5:\n",
+        "  print('z is greater than five')\n",
+        "  print('another line')"
+      ],
+      "metadata": {
+        "id": "Zp94k731ZqIN"
+      },
+      "execution_count": 35,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if z > 5:\n",
+        "  print('z is greater than five')\n",
+        "print('another line')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LgwnW2sfZxi3",
+        "outputId": "ba75b446-a08a-43b1-d73d-64c1d8ceca03"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "another line\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "z = 7\n",
+        "if z > 5:\n",
+        "  print('z is greater than five')\n",
+        "print('another line')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-XISaznzZ50f",
+        "outputId": "9a0ee5bb-7151-49f4-a2da-3247f671fffb"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "z is greater than five\n",
+            "another line\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if z > 5:\n",
+        "  print('z is greater than 5')\n",
+        "else:\n",
+        "  print('z is NOT greater than 5')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KgHZUrREaARn",
+        "outputId": "6bf6c89f-344e-4da0-9315-e74c865d4b0c"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "z is greater than 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "z = 10\n",
+        "\n",
+        "if z > 5:\n",
+        "  print('z is greater than 5')\n",
+        "else:\n",
+        "  print('z is NOT greater than 5')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vesiYaGpaOkt",
+        "outputId": "dd07f0a7-b7a0-4fd7-c528-1b86187d26c8"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "z is greater than 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "FRVerUHHaWOz"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if z > 5:\n",
+        "  print('z is greater than 5')\n",
+        "elif z > 4:\n",
+        "  print('z is greater than 4')\n",
+        "elif z>3:\n",
+        "  print('z is greater than 3')\n",
+        "else:\n",
+        "  print('otherwise')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5eMiJ4nEaWjV",
+        "outputId": "5c92d28e-6c7c-42b7-b713-23a94346a83f"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "z is greater than 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "z = 4.5\n",
+        "\n",
+        "if z > 5:\n",
+        "  print('z is greater than 5')\n",
+        "elif z > 4:\n",
+        "  print('z is greater than 4')\n",
+        "elif z>3:\n",
+        "  print('z is greater than 3')\n",
+        "else:\n",
+        "  print('otherwise')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JHrmRhAmas1b",
+        "outputId": "a236b27e-1145-415c-a5be-87f7f9939df4"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "z is greater than 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "z = 3.5\n",
+        "\n",
+        "if z > 5:\n",
+        "  print('z is greater than 5')\n",
+        "elif z > 4:\n",
+        "  print('z is greater than 4')\n",
+        "elif z>3:\n",
+        "  print('z is greater than 3')\n",
+        "else:\n",
+        "  print('otherwise')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VP_Jy_Q1a199",
+        "outputId": "92d51e75-41da-4b92-888a-114b78ae1f56"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "z is greater than 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "z = 2\n",
+        "\n",
+        "if z > 5:\n",
+        "  print('z is greater than 5')\n",
+        "elif z > 4:\n",
+        "  print('z is greater than 4')\n",
+        "elif z>3:\n",
+        "  print('z is greater than 3')\n",
+        "else:\n",
+        "  print('otherwise')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3vDkrLtHa4oX",
+        "outputId": "ed51cc59-9795-4a6b-df1a-1d04d940a801"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "otherwise\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
